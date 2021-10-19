@@ -145,12 +145,55 @@ body {
 
 .info-box-holder {
   width: 100vw;
-  height: 200px;
+  height: 220px;
   display: flex;
   justify-content: center;
   .info-box {
     width: calc(100vw - 300px);
-    height: 200px;
-    background-color: #f53855;
+    height: 220px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 30px 70px -70px black;
+    border-radius: 10px;
+
+    .info-box-items {
+      width: calc((100vw - 300px) / 3);
+      height: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 150px;
+
+      .info-text-box {
+        width: 90px;
+        font-size: 20px;
+        color: var(--secondary-color);
+        strong {
+          font-size: 25px;
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .info-box-item2 {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #eeeff2;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #eeeff2;
+      }
+    }
   }
 }
