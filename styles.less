@@ -9,6 +9,8 @@ body {
   padding: 0;
   font-family: "Rubik", sans-serif;
   background-color: #f6f6f6;
+  height: auto;
+  overflow-x: hidden;
 }
 
 .nav-bar-holder {
@@ -193,6 +195,48 @@ body {
         width: 2px;
         height: 100%;
         background-color: #eeeff2;
+      }
+    }
+  }
+}
+
+.info-box-extend {
+  width: calc(100vw - 300px);
+  margin: 100px 150px 0;
+  display: flex;
+  justify-content: space-around;
+  .info-extend {
+    width: calc(100vw - 500px - 764px);
+    height: inherit;
+    padding: 150px 0 0 200px;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 500;
+    }
+    h6 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: var(--secondary-color);
+    }
+
+    .info-extend-notes {
+      .info-extend-note {
+        display: flex;
+        height: 30px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
       }
     }
   }
