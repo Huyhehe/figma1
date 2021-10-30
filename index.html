@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
   </head>
   <body>
-    <div class="intro-container">
+    <div class="intro-container" id="head">
       <div class="nav-bar-holder">
         <div class="nav-bar">
           <div class="nav-logo">
@@ -22,7 +22,7 @@
             <ul>
               <li class="nav-menu-items">About</li>
               <li class="nav-menu-items">Features</li>
-              <li class="nav-menu-items">Pricing</li>
+              <li class="nav-menu-items pricing" data-link="price">Pricing</li>
               <li class="nav-menu-items">Testimonials</li>
               <li class="nav-menu-items">Help</li>
             </ul>
@@ -45,7 +45,7 @@
               <strong>LaslesVPN</strong> <br />
               discover interesting features from us.
             </div>
-            <div class="button-box">
+            <div class="button-box" data-link="started">
               <button>Get Started</button>
             </div>
           </div>
@@ -76,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="info-box-extend">
+      <div class="info-box-extend" id="started">
         <img src="image/Illustration2.png" alt="" />
         <div class="info-extend">
           <h1>
@@ -110,7 +110,7 @@
     </div>
     <div class="main-container">
       <div class="plan-container">
-        <div class="plan-header">
+        <div class="plan-header" id="price">
           <h1>Choose Your Plan</h1>
           <h4>
             Let's choose the package that is best for you and explore it happily
@@ -216,6 +216,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="scroll-up-btn" data-link="head">
+      <i class="fas fa-chevron-up"></i>
     </div>
     <script src="app.js"></script>
   </body>
