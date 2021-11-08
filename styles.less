@@ -109,9 +109,10 @@ ul {
     }
 
     .nav-signing {
-      width: 253px;
+      width: 280px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       .nav-signing-items {
         font-size: 20px;
         font-weight: 500;
@@ -121,18 +122,25 @@ ul {
         cursor: pointer;
       }
       .sign-in-btn {
-        position: relative;
         color: var(--primary-color);
+        width: 117px;
+        height: 47px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
         &::after {
           position: absolute;
           content: "";
           width: 0;
-          height: 2px;
+          height: 100%;
           right: 0;
           left: auto;
-          bottom: 0;
-          transition: ease 0.3s;
+          top: 0;
+          z-index: 0;
+          transition: width ease 0.3s;
           background-color: var(--primary-color);
+          border-radius: 50px;
         }
         &:hover {
           &::after {
@@ -141,14 +149,24 @@ ul {
             right: auto;
           }
         }
+        .wrapper {
+          width: 113px;
+          height: 43px;
+          border-radius: inherit;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1;
+          background-color: #ffffff;
+        }
       }
       .sign-up-btn {
         width: 150px;
         height: 45px;
-        border: 1px solid #f53855;
+        border: 2px solid #f53855;
         border-radius: 50px;
         color: #f53855;
-        transition: ease 0.3s;
+        transition: all ease 0.3s;
         &:hover {
           background-color: #f53855;
           color: #ffffff;
@@ -432,4 +450,50 @@ ul {
   border-radius: 50%;
   box-shadow: 0 0 3px 0 var(--primary-color);
   cursor: pointer;
+}
+
+.service-container {
+  width: 100%;
+  h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 40px;
+  }
+  h5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 18px;
+    strong {
+      font-weight: 500;
+    }
+  }
+  .service-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .service-sponsors-container {
+    width: auto;
+    padding: 0 330px;
+    display: flex;
+    align-items: center;
+    .service-sponsor-items {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      padding: 0 30px;
+    }
+  }
 }
