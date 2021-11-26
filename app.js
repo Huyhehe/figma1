@@ -23,9 +23,9 @@ about.addEventListener("click", () => {
 testimonials.addEventListener("click", () => {
   let el = document.getElementById(testimonials.getAttribute("data-link"));
   el.scrollIntoView({ behavior: "smooth" });
-  setTimeout(() => {
-    window.scrollBy(0, 750);
-  }, 500);
+  // setTimeout(() => {
+  //   window.scrollBy(0, 750);
+  // }, 500);
 });
 features.addEventListener("click", () => {
   let el = document.getElementById(features.getAttribute("data-link"));
